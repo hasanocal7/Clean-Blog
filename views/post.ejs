@@ -7,17 +7,16 @@
 
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+  <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Man must explore, and this is exploration at its greatest</h1>
-            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+            <h1><%= blog.title %></h1>
+            <h2 class="subheading"><%= blog.detail %></h2>
             <span class="meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on August 24, 2019</span>
+              <a href="#">Hasan ÖCAL</a></span>
           </div>
         </div>
       </div>
@@ -29,12 +28,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-
-          <h2 class="section-heading"><%= blog.title %></h2>
-          <p><%= blog.detail %></p>
-
-          <span>Created by <a href="#">Hasan Öcal</a>. 
-            <a href="#"><%= blog.dateCreated %></a>.</span>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, recusandae illum! Itaque consectetur exercitationem voluptatem, autem, omnis doloremque eveniet a officiis quasi, illo adipisci voluptas cumque quae voluptatum expedita non.</p>
+          <hr>
+          <span class="meta">
+            <%= blog.dateCreated %></span>
         </div>
       </div>
     </div>
