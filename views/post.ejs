@@ -7,7 +7,7 @@
 
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
+  <header class="masthead" style="background-image: url('img/post-sample-image.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -32,6 +32,11 @@
           <hr>
           <span class="meta">
             <%= blog.dateCreated %></span>
+          <hr>
+        </div>
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <a class="btn btn-primary float-right" href="/blogs/<%= blog._id %>?_method=DELETE" style="background-color: red;" onclick="return confirm('ARE YOU SURE?')" > Delete </a> 
+          <a class="btn btn-primary float-right" href="/update/<%= blog._id %>">Update</a>
         </div>
       </div>
     </div>
