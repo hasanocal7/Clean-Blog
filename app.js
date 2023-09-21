@@ -3,6 +3,8 @@ const express = require('express');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override')
+const dotenv = require('dotenv')
+dotenv.config();
 
 const Blog = require('./models/Blog');
 const pageController = require('./controller/pageController')
@@ -12,7 +14,7 @@ const blogController = require('./controller/blogController')
 const app = express();
 
 // Connect DB
-mongoose.connect('mongodb+srv://hasan:77gjBBPXcOZOUMan@cluster0.3ecy3ck.mongodb.net/', {
+mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
