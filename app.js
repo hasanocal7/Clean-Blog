@@ -12,7 +12,7 @@ const blogController = require('./controller/blogController')
 const app = express();
 
 // Connect DB
-mongoose.connect('mongodb+srv://root:hasan@atlascluster.4tjfe1d.mongodb.net/', {
+mongoose.connect('mongodb+srv://hasan:77gjBBPXcOZOUMan@cluster0.3ecy3ck.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
