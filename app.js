@@ -12,9 +12,13 @@ const blogController = require('./controller/blogController')
 const app = express();
 
 // Connect DB
-mongoose.connect('mongodb://localhost/cleanblog-test-db', {
+mongoose.connect('mongodb+srv://root:hasan@atlascluster.4tjfe1d.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+}).then(() => {
+  console.log('DB CONNECTED');
+}).catch((err) => {
+  console.log(err);
 });
 
 // Template Engine
